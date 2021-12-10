@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v2</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+   <div class="caixa">
+       <p>Calculadora</p>
+       <form onsubmit="return false">
+            <ul class="entrada">
+                <li><input type="number" placeholder="0"></li>
+                <li><input type="number" placeholder="0"></li>
+            </ul>
+                <nav class="botoes">
+                    <ul>
+                        <li><button value = "0" class="btnZerar">C</button></li>
+                        <li><button value = "+" class="btnConta">+</button></li>
+                        <li><button value = "-" class="btnConta">-</button></li>
+                    </ul>
+                    <ul>
+                            <li><button value = "/" class="btnConta">÷</button></li>
+                            <li><button value = "*" class="btnConta">X</button></li>
+                            <li><button value = "%" class="btnConta">%</button></li>
+                    </ul>
+                </nav>
+        </form> 
+        <p>Resultado:</p>
+        <div id="resultado"></div>
+    </div>
+
+</body>
+<script src="calculadora.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="FA/css/all.css">
+</head>
+<body id="corpo">
+    <header id="cabeca">
+        <h1>Desenvolvimento Web 2021-2</h1>
+        <img src="img/page-bg.png" alt="imagem do cabeçalho">
+    </header>
+    <main id="principal">
+        <nav class="menuLateral">
+            <ul>
+                <li><button>Home</button></li>
+                <li><button>Cadastrar</button></li>
+                <li><button>Aprovados</button></li>
+                <li><button>Reprovados</button></li>
+            </ul>
+        </nav>
+        <div id="cronometro">
+            <span id="iconeCrono"><i class="fas fa-stop-circle"></i></span>
+            <span id="tempo">00:00:00:000</span>
+            <nav class="menuCronometro">
+                <ul>
+                    <li><button>Iniciar</button> </li>
+                    <li><button>Pausar</button></li>
+                    <li><button>Parar</button></li>
+                    <li><button>Zerar</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="painel">
+            <h2 id="msgPainel">Painel</h2>
+            <div id="cadastro">
+                <h3>Cadastro</h3>
+                <h4>Informe o nome e a nota</h4>
+                <p id="textoNome">Nome</p>
+                <input type="text" placeholder="Nome">
+                <p id="textoNota">Nota</p>
+                <input type="text" placeholder="Nota">
+                <button>SALVAR</button>
+            </div>
+            <div id="aprovado">
+                <h3>Alunos Aprovados</h3>
+                <h4>Confira a lista de alunos aprovados</h4>
+                <div class="caixaTabela">
+                    <table class="tabela">
+                        <thead class="cabecaTabela">
+                            <tr>
+                                <th>NOME</th>
+                                <th>NOTA</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaAprovado">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="reprovado">
+                <h3>Alunos Reprovados</h3>
+                <h4>Confira a lista de alunos reprovados</h4>
+                <div class="caixaTabela">
+                    <table class="tabela">
+                        <thead class="cabecaTabela">
+                            <tr>
+                                <th>NOME</th>
+                                <th>NOTA</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaReprovado">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <nav class="menuBaixo">
+            <ul>
+                <li><button>Home</button></li> |
+                <li><button>Cadastrar</button></li> |
+                <li><button>Aprovados</button></li> |
+                <li><button>Reprovados</button></li>
+            </ul>
+        </nav>
+    </main>
+    <footer id="rodape">Aluno: Pablo da Cunha Barral</footer>
+</body>
+<script src="cronometro.js"></script>
+<script src="menus.js"></script>
+<script src="funcionalidade.js"></script>
+</html>
